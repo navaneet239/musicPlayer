@@ -450,14 +450,12 @@
 
         #PlayerHome,
         #PlayerMusic,
-        #PlayerVideos,
         #PlayerPlaylists {
             display: none;
         }
 
         #PlayerHome.active,
         #PlayerMusic.active,
-        #PlayerVideos.active,
         #PlayerPlaylists.active {
             display: block;
         }
@@ -584,34 +582,17 @@
             </div>
             <ul>
                 <li id="playerLiMus" class="active" onclick="
-                        document.getElementById('PlayerVideos').classList.remove('active')
                         document.getElementById('PlayerMusic').classList.add('active')
                         document.getElementById('playerMini').classList.remove('playerMiniExpanded')
                         document.querySelector('.playerMain').style.opacity = '1'
                         document.getElementById('PlayerPlaylists').classList.remove('active')
 
                         document.getElementById('playerLiPla').classList.remove('active')
-                        document.getElementById('playerLiVid').classList.remove('active')
                         document.getElementById('playerLiMus').classList.add('active')">
                     <span class="material-symbols-rounded">music_note</span>
                     Music
                 </li>
-                <!--<li id="playerLiVid" onclick="
-                        document.getElementById('PlayerVideos').classList.add('active')
-                        document.getElementById('PlayerMusic').classList.remove('active')
-                        document.querySelector('.playerMain').style.opacity = '1'
-                        document.getElementById('playerMini').classList.remove('playerMiniExpanded')
-                        document.getElementById('PlayerVideos').style.opacity = '1'
-                        document.getElementById('PlayerPlaylists').classList.remove('active')
-
-                        document.getElementById('playerLiPla').classList.remove('active')
-                        document.getElementById('playerLiVid').classList.add('active')
-                        document.getElementById('playerLiMus').classList.remove('active')">
-                    <span class="material-symbols-rounded">movie</span>
-                    Videos
-                </li>-->
                 <li id="playerLiPla" onclick="
-                        document.getElementById('PlayerVideos').classList.remove('active')
                         document.getElementById('PlayerMusic').classList.remove('active')
                         document.querySelector('.playerMain').style.opacity = '1'
                         document.getElementById('PlayerPlaylists').style.opacity = '1'
@@ -619,7 +600,6 @@
                         document.getElementById('PlayerPlaylists').classList.add('active')
 
                         document.getElementById('playerLiPla').classList.add('active')
-                        document.getElementById('playerLiVid').classList.remove('active')
                         document.getElementById('playerLiMus').classList.remove('active')
 
                         ">
@@ -729,12 +709,6 @@
                             });
                         }
                     </script>
-                </div>
-                <div id="PlayerVideos">
-                    <h1 style="font-size: 36px;opacity: 0.5; margin-top: -5px; margin-bottom: 5px;">Videos</h1>
-                    <p
-                        style="opacity: 0.5;height: 100%;display: flex;align-items: center;justify-content: center;font-size: 16px;">
-                        Video tracklist coming soon.</p>
                 </div>
                 <div id="PlayerPlaylists">
                     <h1 style="font-size: 36px;opacity: 0.5; margin-top: -5px; margin-bottom: 5px;">Playlists</h1>
